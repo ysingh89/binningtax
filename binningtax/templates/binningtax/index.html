@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block page_title %}{% endblock page_title %}</title>
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'binningtax/styles.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'binningtax/bootstrap.css' %}" type="text/css">
+
+</head>
+<body>
+<div class="container-fluid">
+        <div class="header">
+          <div>Binning Immigration and Tax Services</div>
+
+        </div>
+
+        <nav class="navbar navbar-expand-lg navbar-background">
+              <a class="navbar-brand" href="#">Brand</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-content">
+                  <a class="nav-item navbar-links-color nav-link active" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item navbar-links-color nav-link" href="{% url 'tax' %}">Tax Services</a>
+                  <a class="nav-item navbar-links-color nav-link" href="#">Immigration Services</a>
+                  <a class="nav-item navbar-links-color nav-link" href="#">About</a>
+                  <a class="nav-item navbar-links-color nav-link disabled" href="#">Contact Us</a>
+                </div>
+              </div>
+
+        </nav>
+        {% block content %}
+
+        {% endblock %}
+
+    <footer class="footer">
+        <div class="">
+            <div class="row">
+                <div class="col-md-4">
+
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            2000 W Kettleman Lane, Suite 102B
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            Lodi CA 95242
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            (209) 365-7303
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            sunny@binningtax.com
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <small style="color: #F99142;">© 2018 Binning Tax Service - All Rights Reserved</small>
+                </div>
+                <div class="col-md-2">
+
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    </div>
+
+</body>
+</html>

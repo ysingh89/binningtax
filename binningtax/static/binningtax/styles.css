@@ -1,0 +1,35 @@
+.header {
+    padding: 0.25em;
+    background-color: whitesmoke;
+    color: #0C143E;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+    text-align: -webkit-center;
+    background-color: #0C143E;
+    color: whitesmoke;
+}
+
+.sidebar{
+    background-color: #71B270;
+    font-weight: 700;
+}
+
+.navbar-background{
+    background-color: #0C143E;
+}
+.navbar-content{
+    font-style: oblique;
+    font-size: 1.5em;
+}
+
+.navbar-links-color{
+    color: whitesmoke;
+}
+
+.page_heading{
+    text-align: center;
+}

@@ -1,0 +1,31 @@
+{% extends 'binningtax/index.html' %}
+
+{% block page_title %}
+  Home page
+{% endblock page_title %}
+
+{% block content %}
+{% load static %}
+    <div class="">
+       <div class="row row-eq-height" style="padding: 2em 0em 2em 0em;">
+           <div class="col-md-9">
+               <img src="{% static 'binningtax/images/tax.png' %}" alt="money image" style="width:inherit;">
+           </div>
+           <!--<div class="col-md-1"></div>-->
+           <div class="col-md-3">
+               <div class="sidebar">
+                   <ul>
+                       <li>Income Tax (Specializing in trucking businesses)</li>
+                       <li>We do Quarterly IFTA Fuel Tax</li>
+                       <li>Enrolled to practice before the IRS</li>
+                   </ul>
+               </div>
+
+           </div>
+
+        </div>
+    </div>
+
+
+
+{% endblock %}
