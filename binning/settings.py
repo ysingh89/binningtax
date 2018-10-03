@@ -25,7 +25,7 @@ SECRET_KEY = 'ed0_&4h8559*%0ceo34hsx91wr8cv3v4602omgu#==9_qf#xnl'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://binningtax.herokuapp.com/']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
