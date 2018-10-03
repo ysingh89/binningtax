@@ -1,10 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'binningtax/index.html' %}
 
-</body>
-</html>
+{% block page_title %}
+  Immigration Info
+{% endblock page_title %}
+
+{% block content %}
+{% load static %}
+
+    <div class="container-fluid">
+        <div class="row" style="height:4em;"></div>
+        <div class="row">
+            <div class="col-md-3"></div>
+           <div class="col-md-6">
+               <div class="page_heading">
+                   <h1>Immigration Services</h1>
+               </div>
+           </div>
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row" style="height:4em;"></div>
+        <div class="row row-eq-height">
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid rounded" src="{% static 'binningtax/images/kid-sad.jpg' %}">
+                    </div>
+                </div>
+                <div class="row" style="height:1em;"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Deferred Action for Childhood Arrival</p>
+                    </div>
+                </div>
+
+
+                <div class="row" style="height:4em;"></div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid rounded" src="{% static 'binningtax/images/passport.jpg' %}">
+                    </div>
+                </div>
+                <div class="row" style="height:1em;"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Naturalization</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <!--Second Column-->
+            <div class="col-md-4">
+                <div class="row" style="height:4em;"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid rounded" src="{% static 'binningtax/images/migration-flag.jpg' %}">
+                    </div>
+
+                </div>
+                <div class="row" style="height:1em;"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Permanent Residence</p>
+
+                    </div>
+                </div>
+
+                <div class="row" style="height:2em;"></div>
+
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid rounded" src="{% static 'binningtax/images/shaking-hands.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="row" style="height:1em;"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Employment Authorization Document</p>
+                    </div>
+                </div>
+                <div class="row" style="height:3em;"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid rounded" src="{% static 'binningtax/images/gavel.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="row" style="height:1em;"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Unlawful Presence Waivers</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <!--Third Column-->
+            <div class="col-md-4">
+                <div class="row">
+                    <div class="col-md-12">
+                        <img class="img-fluid rounded" src="{% static 'binningtax/images/cloud-immigration.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="row" style="height:1em;"></div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-center">Removal on Conditional Status</p>
+                    </div>
+                </div>
+                <div class="row" style="height:4em;"></div>
+
+                <img class="img-fluid thumbnail" src="{% static 'binningtax/images/statue.png' %}">
+            </div>
+        </div>
+        <div class="row" style="height:4em;"></div>
+    </div>
+
+{% endblock %}

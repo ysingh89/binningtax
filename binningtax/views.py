@@ -10,3 +10,6 @@ def home(request):
 def tax(request):
     return render(request, 'binningtax/tax.html')
     # return HttpResponse("Hello from tax page")
+
+def immigration(request):
+    return render(request, 'binningtax/immigration.html')
