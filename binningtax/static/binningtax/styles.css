@@ -13,8 +13,11 @@
     color: whitesmoke;
 }
 
+.homepage-main-img{
+    width:inherit;
+}
+
 .sidebar{
-    background-color: #71B270;
     font-weight: 700;
 }
 
