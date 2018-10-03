@@ -1,1 +1,1 @@
-web: gunicorn binningtax.wsgi --log-file -
+web: gunicorn binning.wsgi
