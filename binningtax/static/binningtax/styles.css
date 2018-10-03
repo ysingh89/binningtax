@@ -43,3 +43,8 @@
 .text-center{
     text-align: center;
 }
+
+.block-heading{
+    font-size: 1.5em;
+    color: #CE3B3E;
+}
