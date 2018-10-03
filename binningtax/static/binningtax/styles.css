@@ -1,7 +1,7 @@
 .header {
     padding: 0.25em;
     background-color: whitesmoke;
-    color: #0C143E;
+    color: #003366;
     font-size: 4em;
     font-weight: bold;
     text-align: center;
@@ -9,7 +9,7 @@
 
 .footer {
     text-align: -webkit-center;
-    background-color: #0C143E;
+    background-color: #003366;
     color: whitesmoke;
 }
 
@@ -26,10 +26,9 @@
 }
 
 .navbar-background{
-    background-color: #0C143E;
+    background-color: #003366;
 }
 .navbar-content{
-    font-style: oblique;
     font-size: 1.5em;
 }
 
