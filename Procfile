@@ -1,0 +1,1 @@
+web: gunicorn binningtax.wsgi --log-file -
