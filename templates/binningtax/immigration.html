@@ -4,10 +4,20 @@
   Immigration Info
 {% endblock page_title %}
 
-{% block content %}
-{% load static %}
 
-    <div class="container-fluid">
+{% load static %}
+{% block header-image %}
+
+    <div class="">
+        <img src="{% static 'binningtax/images/india.svg' %}" alt="">
+    </div>
+
+{% endblock header-image %}
+
+
+{% block content %}
+
+    <div class="">
         <!--<div class="row" style="height:4em;"></div>-->
         <div class="row jumbotron">
             <div class="col-lg-3"></div>

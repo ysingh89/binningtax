@@ -4,7 +4,19 @@
   Home page
 {% endblock page_title %}
 
-{% block content %}
+
 {% load static %}
+{% block header-image %}
+
+    <div class="container-fluid">
+        <img src="{% static 'binningtax/images/india.svg' %}" alt="">
+    </div>
+
+{% endblock header-image %}
+
+
+
+{% block content %}
+
     {{ form }}
 {% endblock %}
