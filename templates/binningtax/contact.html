@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'binningtax/index.html' %}
 
-</body>
-</html>
+{% block page_title %}
+  Home page
+{% endblock page_title %}
+
+{% block content %}
+{% load static %}
+    {{ form }}
+{% endblock %}

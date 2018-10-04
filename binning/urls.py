@@ -19,5 +19,5 @@ from django.urls import path, include
 urlpatterns = [
     path('', include('binningtax.urls')),
     path('admin/', admin.site.urls),
-    path('binningtax/', include('binningtax.urls')),
+    path('binningconsultants/', include('binningtax.urls')),
 ]
