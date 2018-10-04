@@ -7,11 +7,25 @@
 {% block content %}
 {% load static %}
     <div class="">
-        <div class="row" style="height:4em;"></div>
+
+       <div class="row" style="height:4em;"></div>
        <div class="row row-eq-height" style="padding: 2em 0em 2em 0em;">
            <div class="col-lg-1"></div>
            <div class="col-lg-6">
-               <img class="homepage-main-img img-thumbnail" src="{% static 'binningtax/images/tax.png' %}" alt="money image">
+               <div id="" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner shadow">
+                    <div class="carousel-item active">
+                      <img class="d-block homepage-main-img img-thumbnail" src="{% static 'binningtax/images/tax.png' %}" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block homepage-main-img img-thumbnail" src="{% static 'binningtax/images/cloud-immi-samll.png' %}" alt="Second slide">
+                    </div>
+                  </div>
+                </div>
+
+
+
+
            </div>
            <div class="col-lg-1"></div>
            <div class="col-lg-3 sidebar">
@@ -46,6 +60,8 @@
         <div class="row" style="height:4em;"></div>
     </div>
 
-
+<script>
+    $('.carousel').carousel()
+</script>
 
 {% endblock %}
