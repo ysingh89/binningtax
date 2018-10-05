@@ -8,8 +8,8 @@
 {% load static %}
 {% block header-image %}
 
-    <div class="container-fluid">
-        <img src="{% static 'binningtax/images/india.svg' %}" alt="">
+    <div class="">
+        <img class="img-fluid" src="{% static 'binningtax/images/india.svg' %}" alt="">
     </div>
 
 {% endblock header-image %}
@@ -17,6 +17,101 @@
 
 
 {% block content %}
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <h1 class="text-center">Contact</h1>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-4">
+                <p>Thank you for your interest. For questions or comments please use the information below.
+                    We look forward to hearing from you soon.
+                </p>
+                <p>
+                    Hours of Operation:
+                </p>
+                <p>
+                    Monday - Sunday: 9:00 a.m. to 5:00 p.m.
+                </p>
+                <p>
+                    Phone: (209) 570-5240
+                </p>
+                <p>
+                    Email: email@email.com
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <form id="contactFrom" method="post" action="{% url 'contact' %}">
+                    {% csrf_token %}
+                    {{ form.errors }}
+                    <div class="row">
+                        <div class="col-lg-12">Name</div>
+                        <div class="col-lg-12">
+                            <div class="col-lg-6">
+                                <div class="col-lg-12">
+                                    <div class="">
+                                        {{ form.fname }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <label class="small">{{ form.fname.label }}</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="col-lg-12">
+                                    {{ form.lname }}
+                                </div>
+                                <div class="col-lg-12">
+                                    <label class="small">{{ form.lname.label }}</label>
+                                </div>
+                            </div>
+                        </div>
 
-    {{ form }}
+                    </div>
+                    <div class="row">
+                       <div class="col-lg-2">
+                           <label>{{ form.email.label }}</label>
+                       </div>
+                        <div class="col-lg-10">
+                            {{ form.email }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label> {{ form.phone.label }} </label>
+                        </div>
+                        <div class="col-lg-10">
+                            {{ form.phone }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label> {{ form.subject.label }} </label>
+                        </div>
+                        <div class="col-lg-10">
+                            {{ form.subject }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <label> {{ form.body.label }} </label>
+                        </div>
+                        <div class="col-lg-10">
+                            {{ form.body }}
+                        </div>
+                    </div>
+                    <button type="submit" class="button">
+                        Submit
+                    </button>
+                </form>
+               <!--{{ form }}-->
+            </div>
+            <!--<div class="col-lg-2"></div>-->
+        </div>
+    </div>
+
 {% endblock %}
