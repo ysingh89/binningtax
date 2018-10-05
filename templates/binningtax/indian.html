@@ -3,18 +3,84 @@
 {% block page_title %}
   Home page
 {% endblock page_title %}
+
 {% load static %}
 {% block header-image %}
 
-    <div class="container-fluid">
-        <img src="{% static 'binningtax/images/india.svg' %}" alt="">
+    <div class="">
+        <img class="img-fluid" src="{% static 'binningtax/images/india.svg' %}" alt="">
     </div>
 
 {% endblock header-image %}
 
 {% block content %}
 
+<div class="container-fluid" style="background-color:#F2F2F2;">
+    <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-10">
+            <div class="row" style="height:2em;"></div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck">
+                       <div class="card zoom" style="width:inherit;">
+                          <img class="card-img-top" src="{% static 'binningtax/images/ind-flag.jpg' %}" alt="Card image">
+                          <div class="card-body">
+                            <h4 class="card-title text-center zoom">OCI</h4>
+                            <p class="card-text">Obtain Overseas Citizenship of India if you have acquired citizenship of a
+                                foreign country and are of Indian Origin, or were or are eligible to become a citizen of India</p>
+                            <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                          </div>
+                        </div>
+                        <div class="card zoom" style="width:inherit;">
+                          <img class="card-img-top" src="{% static 'binningtax/images/guard.jpg' %}" alt="Card image">
+                          <div class="card-body">
+                            <h4 class="card-title text-center zoom">Indian Passport in USA</h4>
+                            <p class="card-text">We can help obtaining a lost passport or renewing an existing passport</p>
+                            <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                          </div>
+                        </div>
+                        <div class="card zoom" style="width:inherit;">
+                          <img class="card-img-top" src="{% static 'binningtax/images/color.jpg' %}" alt="Card image">
+                          <div class="card-body">
+                            <h4 class="card-title text-center zoom">Renunciation of Indian Citizenship</h4>
+                            <p class="card-text">Surrender your Indian passport if you have obtained citizenship of another country</p>
+                            <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                          </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+            <div class="row" style="height:3em;"></div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card-deck">
+                         <div class="card zoom" style="width:inherit;">
+                          <img class="card-img-top" src="{% static 'binningtax/images/dance-ind.jpg' %}" alt="Card image">
+                          <div class="card-body">
+                            <h4 class="card-title text-center zoom">Indian Visas</h4>
+                            <p class="card-text">Obtain Indian Visa depending on nature of your visit</p>
+                            <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                          </div>
+                        </div>
+                       <div class="card zoom" style="width:inherit;">
+                          <img class="card-img-top" src="{% static 'binningtax/images/ancient.jpg' %}" alt="Card image">
+                          <div class="card-body">
+                            <h4 class="card-title text-center zoom">Power of Attorney</h4>
+                            <p class="card-text">Obtain a power of attorney whether it is for immovable property or
+                                non-property related matters in India</p>
+                            <!--<a href="#" class="btn btn-primary">See Profile</a>-->
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="height:2em;"></div>
+        </div>
+        <div class="col-lg-1"></div>
+    </div>
+</div>
 
 
 

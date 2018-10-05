@@ -8,7 +8,7 @@
 {% block header-image %}
 
     <div class="">
-        <img src="{% static 'binningtax/images/india.svg' %}" alt="">
+        <img class="img-fluid" src="{% static 'binningtax/images/panorama.jpg' %}" alt="">
     </div>
 
 {% endblock header-image %}
@@ -33,32 +33,17 @@
                     <div class="col-lg-2">
                         <div class="row">
                             <div class="col-lg-12">
-                                <div class="card-background card zoom shadow" style="width:inherit;">
-                                  <!--<img class="card-img-top" src="{% static 'binningtax/images/coins-pens.jpg' %}" alt="Card image">-->
-                                  <div class="card-body">
-                                    <h4 class="card-title zoom block-heading">Income Tax</h4>
-                                    <ul style="padding-left: 1.2em;">
-                                        <b>
-                                            <li>
-                                                1040, Personal Tax Return
-                                            </li>
-                                            <li>
-                                                1120s, Small Corporation
-                                            </li>
-                                            <li>
-                                                1065, LLC
-                                            </li>
-                                            <li>
-                                                Profit & Loss Statement
-                                            </li>
-                                            <li>
-                                                Balance Sheets
-                                            </li>
-                                        </b>
-                                    </ul>
-                                  </div>
+                                <div class="card-background card zoom shadow-sm">
+                                    <div class="card-body">
+                                       <p>
+                                            We can help you keep more of the money you have hard worked for by taking advantage
+                                            of all the tax-savings opportunities available to you and your business.
+                                            Whether it’s reducing your individual tax burden or applying for tax credits
+                                            and incentives for your company, our technical guidance and expertise can help you save
+                                            a lot of money.
+                                        </p>
+                                    </div>
                                 </div>
-
                             </div>
                         </div>
                         <div class="row" style="height:2em;"></div>
@@ -66,30 +51,42 @@
                             <div class="col-lg-12">
                                 <div class="card zoom shadow-sm" style="width:inherit;">
                                   <img class="card-img-top" src="{% static 'binningtax/images/coins-pens.jpg' %}" alt="Card image">
-                                  <!--<div class="card-body">-->
-                                    <!--<h4 class="card-title zoom">Renew/Replace Green Card</h4>-->
-                                    <!--<p class="card-text">File I-90, Application to Replace Permanent Resident Card</p>-->
-                                    <!--<a href="#" class="btn btn-primary">See Profile</a>-->
-                                  <!--</div>-->
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-6">
-                        <div class="row jumbotron"></div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <p>
-                                    &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspWe can help you keep more of the money you have hard worked for by taking advantage
-                                    of all the tax-savings opportunities available to you and your business.
-                                    Whether it’s reducing your individual tax burden or applying for tax credits
-                                    and incentives for your company, our technical guidance and expertise can help you save
-                                    a lot of money.
-                                </p>
-
+                    <div class="col-lg-10">
+                       <div class="row">
+                           <div class="col-lg-7">
+                        <div class="row" style="height:2em;"></div>
+                        <div class="row jumbotron h4">
+                            <div class="card-background card card-tax-main zoom shadow" style="width:inherit;">
+                              <!--<img class="card-img-top" src="{% static 'binningtax/images/coins-pens.jpg' %}" alt="Card image">-->
+                              <div class="card-body">
+                                <h4 class="card-title text-center zoom block-heading">Income Tax</h4>
+                                <ul style="padding-left: 1.2em;">
+                                    <b>
+                                        <li>
+                                            1040, Personal Tax Return
+                                        </li>
+                                        <li>
+                                            1120s, Small Corporation
+                                        </li>
+                                        <li>
+                                            1065, LLC
+                                        </li>
+                                        <li>
+                                            Profit & Loss Statement
+                                        </li>
+                                        <li>
+                                            Balance Sheets
+                                        </li>
+                                    </b>
+                                </ul>
+                              </div>
                             </div>
                         </div>
+
                         <div class="row light-gray-background rounded" style="padding:2em;">
                             <div class="col-lg-12">
                                 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -177,8 +174,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-4">
+                           <div class="col-lg-5">
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="card zoom shadow" style="width:inherit;">
@@ -192,7 +188,7 @@
                                 <div class="card zoom shadow" style="width:inherit;">
                                   <!--<img class="card-img-top" src="{% static 'binningtax/images/receipts.jpg' %}" alt="Card image">-->
                                   <div class="card-body">
-                                    <h4 class="card-title zoom block-heading">Why Us?</h4>
+                                    <h4 class="card-title text-center zoom block-heading">Why Us?</h4>
                                     <ul>
                                         <li>
                                             Over 20 years of experience
@@ -216,6 +212,11 @@
                             </div>
                         </div>
                     </div>
+                       </div>
+                   </div>
+
+
+
 
                 </div>
             </div>

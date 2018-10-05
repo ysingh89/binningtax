@@ -8,9 +8,25 @@
 {% load static %}
 {% block header-image %}
 
-    <div class="">
-        <img src="{% static 'binningtax/images/india.svg' %}" alt="">
+    <div class="" >
+        <div id="carousel-header" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="{% static 'binningtax/images/panorama-gg.jpg' %}" alt="First slide">
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid" src="{% static 'binningtax/images/miami.jpg' %}" alt="Second slide">
+            </div>
+          </div>
+        </div>
+        <!--<img class="img-fluid" style="width:inherit;" src="{% static 'binningtax/images/miami.jpg' %}" alt="">-->
     </div>
+
+<script>
+    $('.carousel').carousel({
+      interval: 10000
+    })
+</script>
 
 {% endblock header-image %}
 
@@ -188,8 +204,6 @@
         </div>
         <div class="row" style="height:4em;"></div>
     </div>
-
-
 
 <script>
     $('.carousel').carousel()

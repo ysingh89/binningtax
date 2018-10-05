@@ -65,3 +65,9 @@
 .light-gray-background{
     background-color: #f7f7f7;
 }
+
+.card-tax-main {
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
