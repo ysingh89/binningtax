@@ -23,24 +23,33 @@ def indian(request):
 
 
 def contact(request):
+    form = ContactForm()
     if request.method == 'POST':
         form_contact = request.POST
+        # print(form_contact)
         message = "Subject: " + form_contact['subject']
-        message += "\n Body: " + form_contact['body']
+        message += "\nBody: " + form_contact['body']
         message += "\n\n\nFrom: "
         message += "\n" + form_contact['fname'] + " "
         message += form_contact['lname']
-        message += "\nEmail address "
+        message += "\nEmail address: "
         message += form_contact['email']
         message += "\nPhone: " + form_contact['phone']
 
-        send_mail(
-            'Web Query',
-            message,
-            'query@binningconsultants.com',
-            ['info@binningconsultants.com'],
-            fail_silently=False,
-        )
-        print(form_contact['fname'])
-    form = ContactForm()
+        try:
+            send_mail(
+                'Web Query',
+                message,
+                'query@binningconsultants.com',
+                ['info@binningconsultants.com'],
+                fail_silently=False,
+            )
+        except Exception as e:
+            pass
+        else:
+            return render(request,
+                          'binningtax/contact.html',
+                          {'form': form, 'message': 'Your query has been submitted successfully.'})
+
+        # print(form_contact['fname'])
     return render(request, 'binningtax/contact.html', {'form': form})

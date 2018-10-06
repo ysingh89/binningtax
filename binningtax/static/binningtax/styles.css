@@ -1,3 +1,29 @@
+@font-face{
+	font-family: Poppins;
+	src: url('fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face{
+	font-family: PoppinsSemiBold;
+	src: url('fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+@font-face{
+	font-family: PoppinsItalic;
+	src: url('fonts/poppins/Poppins-MediumItalic.ttf');
+}
+
+@font-face{
+	font-family: PoppinsBold;
+	src: url('fonts/poppins/Poppins-Bold.ttf');
+}
+
+
+
+.font{
+    font-family: Poppins;
+}
+
 .header {
     padding: 0.25em;
     background-color: whitesmoke;
@@ -71,3 +97,7 @@
         float: none; /* Added */
         margin-bottom: 10px; /* Added */
 }
+
+
+
+

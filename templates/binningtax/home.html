@@ -14,7 +14,13 @@
 {% endblock header-image %}
 
 {% block content %}
-    <div class="">
+
+<style>
+    .home_page_background{
+        background: url{% static 'binningtax/images/wall.jpg' %}
+    }
+</style>
+    <div class="home_page_background">
 
        <div class="row" style="height:4em;"></div>
        <div class="row row-eq-height" style="padding: 2em 0em 2em 0em;">
@@ -26,7 +32,7 @@
                       <img class="d-block homepage-main-img img-thumbnail" src="{% static 'binningtax/images/tax.png' %}" alt="First slide">
                     </div>
                     <div class="carousel-item">
-                      <img class="d-block homepage-main-img img-thumbnail" src="{% static 'binningtax/images/cloud-immi-samll.png' %}" alt="Second slide">
+                      <img class="d-block homepage-main-img img-thumbnail" src="{% static 'binningtax/images/cloud-immigration.png' %}" alt="Second slide">
                     </div>
                   </div>
                 </div>

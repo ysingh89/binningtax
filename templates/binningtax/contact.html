@@ -9,7 +9,7 @@
 {% block header-image %}
 
     <div class="">
-        <img class="img-fluid" src="{% static 'binningtax/images/india.svg' %}" alt="">
+        <img class="img-fluid" src="{% static 'binningtax/images/abstract-attractive.jpg' %}" alt="">
     </div>
 
 {% endblock header-image %}
@@ -21,14 +21,24 @@
         <div class="row jumbotron">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
-                <h1 class="text-center">Contact</h1>
+                <h1 class="text-center">Questions or Concerns?</h1>
             </div>
             <div class="col-lg-2"></div>
         </div>
+        {% if message %}
+        <div class="row">
+            <div class="col text-center jumbotron" style="background-color:gray;">
+                <p class="display-3">Sent Successfully.</p>
+                <p class="display-4">We will get back to you at our earliest.</p>
+            </div>
+        </div>
+        {% endif %}
+
         <div class="row">
             <div class="col-lg-2"></div>
             <div class="col-lg-4">
-                <p>Thank you for your interest. For questions or comments please use the information below.
+                <p>Thank you for your interest in us. If you have any question or
+                    comment please use the information below or submit a request.
                     We look forward to hearing from you soon.
                 </p>
                 <p>
@@ -41,76 +51,70 @@
                     Phone: (209) 570-5240
                 </p>
                 <p>
-                    Email: email@email.com
+                    Email: info@binningconsultants.com
                 </p>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-4">
                 <form id="contactFrom" method="post" action="{% url 'contact' %}">
                     {% csrf_token %}
                     {{ form.errors }}
-                    <div class="row">
-                        <div class="col-lg-12">Name</div>
-                        <div class="col-lg-12">
-                            <div class="col-lg-6">
-                                <div class="col-lg-12">
-                                    <div class="">
-                                        {{ form.fname }}
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <label class="small">{{ form.fname.label }}</label>
-                                </div>
+                    <!--{{ form }}-->
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-2">
+                                <label>Name</label>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="col-lg-12">
-                                    {{ form.lname }}
-                                </div>
-                                <div class="col-lg-12">
-                                    <label class="small">{{ form.lname.label }}</label>
-                                </div>
+                            <div class="col">
+                                {{ form.fname }}
+                              <!--<input type="text" class="form-control" placeholder="First name" required="true">-->
+                            </div>
+                            <div class="col">
+                                {{ form.lname }}
+                              <!--<input type="text" class="form-control" placeholder="Last name" required="true">-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <label>Email address</label>
+                                {{ form.email }}
+                                <!--<input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Enter email" required="true">-->
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                        </div>
+                        <div class="row">
+                          <label class="col-12 col-form-label">Telephone</label>
+                          <div class="col-12">
+                              {{ form.phone }}
+                            <!--<input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="tel-input" required="true">-->
+                          </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col">
+                                <label>Subject</label>
+                                {{ form.subject }}
+                                <!--<input type="text" class="form-control" placeholder="" id="subject">-->
                             </div>
                         </div>
 
-                    </div>
-                    <div class="row">
-                       <div class="col-lg-2">
-                           <label>{{ form.email.label }}</label>
-                       </div>
-                        <div class="col-lg-10">
-                            {{ form.email }}
+                        <div class="row">
+                            <div class="col">
+                                <label>Questions/Comments</label>
+                                {{ form.body }}
+                                <!--<textarea class="form-control" id="textArea" rows="3" required="true"></textarea>-->
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <button type="submit" class="button btn btn-lg btn-block">
+                                    Submit
+                                </button>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <label> {{ form.phone.label }} </label>
-                        </div>
-                        <div class="col-lg-10">
-                            {{ form.phone }}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <label> {{ form.subject.label }} </label>
-                        </div>
-                        <div class="col-lg-10">
-                            {{ form.subject }}
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-2">
-                            <label> {{ form.body.label }} </label>
-                        </div>
-                        <div class="col-lg-10">
-                            {{ form.body }}
-                        </div>
-                    </div>
-                    <button type="submit" class="button">
-                        Submit
-                    </button>
                 </form>
-               <!--{{ form }}-->
             </div>
-            <!--<div class="col-lg-2"></div>-->
+            <div class="col-lg-2"></div>
         </div>
     </div>
 
