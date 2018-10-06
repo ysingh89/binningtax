@@ -6,20 +6,20 @@ from .forms import ContactForm
 
 
 def home(request):
-    return render(request, 'binningtax/home.html')
+    return render(request, 'binningtax/home.html', {'home': 'home'})
 
 
 def tax(request):
-    return render(request, 'binningtax/tax.html')
+    return render(request, 'binningtax/tax.html', {'tax': 'tax'})
     # return HttpResponse("Hello from tax page")
 
 
 def immigration(request):
-    return render(request, 'binningtax/immigration.html')
+    return render(request, 'binningtax/immigration.html', {'immigration': 'immigration'})
 
 
 def indian(request):
-    return render(request, 'binningtax/indian.html')
+    return render(request, 'binningtax/indian.html', {'indian': 'indian'})
 
 
 def contact(request):
@@ -49,7 +49,10 @@ def contact(request):
         else:
             return render(request,
                           'binningtax/contact.html',
-                          {'form': form, 'message': 'Your query has been submitted successfully.'})
+                          {'form': form,
+                           'message': 'Your query has been submitted successfully.',
+                           'contact': 'contact'
+                           })
 
         # print(form_contact['fname'])
-    return render(request, 'binningtax/contact.html', {'form': form})
+    return render(request, 'binningtax/contact.html', {'form': form, 'contact': 'contact'})

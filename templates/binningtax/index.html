@@ -30,18 +30,15 @@
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav navbar-content">
-                    <a class="nav-item navbar-links-color nav-link zoom" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
-                    <a class="nav-item navbar-links-color nav-link zoom" href="{% url 'tax' %}">Tax</a>
-                    <a class="nav-item navbar-links-color nav-link zoom" href="{% url 'immigration' %}">US Immigration</a>
-                    <a class="nav-item navbar-links-color nav-link zoom" href="{% url 'indian' %}">Indian Services</a>
+                    <a class="nav-item navbar-links-color nav-link zoom {% if home %} active-page {% endif %}" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item navbar-links-color nav-link zoom {% if tax %} active-page {% endif %}" href="{% url 'tax' %}">Tax</a>
+                    <a class="nav-item navbar-links-color nav-link zoom {% if immigration %} active-page {% endif %}" href="{% url 'immigration' %}">US Immigration</a>
+                    <a class="nav-item navbar-links-color nav-link zoom {% if indian %} active-page {% endif %}" href="{% url 'indian' %}">Indian Services</a>
                     <a class="nav-item navbar-links-color nav-link disabled" href="#">About</a>
-                    <a class="nav-item navbar-links-color nav-link" href="{% url 'contact' %}">Contact Us</a>
-
+                    <a class="nav-item navbar-links-color nav-link {% if contact %} active-page {% endif %}" href="{% url 'contact' %}">Contact Us</a>
                 </div>
               </div>
-            <span class="badge badge-info">Office</span>
-            <a class="right navbar-links-color nav-link" href="#"><b>(209) 570-5240</b></a>
-
+            <span class="badge badge-info right">Office <p class="h5">(209) 570-5240</p></span>
         </nav>
         {% block content %}
 
@@ -50,53 +47,35 @@
     <footer class="footer">
         <div class="">
             <div class="row">
-                <div class="col-md-4">
-
+                <div class="col d-flex align-items-center justify-content-center">
+                    Office: (209) 570-5240
                 </div>
-                <div class="col-md-4">
+                <div class="col">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col">
                             163 D'Arcy Parkway
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col">
                             Lathrop, CA 95330
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-12">
-                            Office: (209) 570-5240
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            Sunny: (209) 482-7725
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
+                        <div class="col">
                             info@binningconsultants.com
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-
+                <div class="col d-flex align-items-center justify-content-center">
+                    Sunny: (209) 482-7725
                 </div>
-
             </div>
             <div class="row">
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-md-8">
+                <div class="col">
                     <small style="color: #F99142;">© 2018 Binning Immigration and Tax Consultants - All Rights Reserved</small>
                 </div>
-                <div class="col-md-2">
-
-                </div>
             </div>
-
         </div>
 
     </footer>
