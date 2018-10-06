@@ -33,18 +33,13 @@
 
 {% block content %}
 
-<style>
-    .home_page_background{
-        background: url{% static 'binningtax/images/wall.jpg' %}
-    }
-</style>
     <div class="home_page_background">
 
        <div class="row" style="height:4em;"></div>
        <div class="row row-eq-height" style="padding: 2em 0em 2em 0em;">
            <div class="col-lg-1"></div>
            <div class="col-lg-6">
-               <div id="" class="carousel slide" data-ride="carousel">
+               <div id="homepage_carousal" class="carousel slide" data-ride="carousel">
                   <div class="carousel-inner shadow">
                     <div class="carousel-item active">
                       <img class="d-block homepage-main-img img-thumbnail" src="{% static 'binningtax/images/tax.png' %}" alt="First slide">
@@ -61,10 +56,8 @@
                 <div class="row" style="height:2em;"></div>
                <div class="row">
                    <div class="col-lg-12 border-right border-bottom">
-                      <ul>
-                          <div class="">
-                            <lh class="block-heading">Tax Services</lh>
-                          </div>
+                      <div class="block-heading">Tax Services</div>
+                       <ul>
                           <li>We specialize in filling tax return for individuals and businesses.</li>
                           <li>Our focus is on saving our clients as much money as possible.</li>
                       </ul>
@@ -73,8 +66,8 @@
                 <div class="row" style="height:4em;"></div>
                <div class="row">
                    <div class="col-lg-12 border-top border-left">
+                       <div class="block-heading">Immigration Services</div>
                        <ul>
-                           <lh class="block-heading">Immigration Services</lh>
                            <li>We are a registered and bonded Immigration Consultants in the state of California.</li>
                            <li>We specialize in Family counseling and preparing Immigration forms.</li>
                        </ul>
