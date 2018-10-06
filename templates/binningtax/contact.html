@@ -36,6 +36,14 @@
 
 {% block content %}
     <div class="container-fluid">
+        {% if message %}
+        <div class="row jumbotron">
+            <div class="col text-center" style="background-color:gray;">
+                <p class="display-3">Sent Successfully.</p>
+                <p class="display-4">We will get back to you at our earliest.</p>
+            </div>
+        </div>
+        {% endif %}
         <div class="row jumbotron">
             <div class="col-lg-2"></div>
             <div class="col-lg-8">
@@ -43,14 +51,7 @@
             </div>
             <div class="col-lg-2"></div>
         </div>
-        {% if message %}
-        <div class="row">
-            <div class="col text-center jumbotron" style="background-color:gray;">
-                <p class="display-3">Sent Successfully.</p>
-                <p class="display-4">We will get back to you at our earliest.</p>
-            </div>
-        </div>
-        {% endif %}
+
 
         <div class="row">
             <div class="col">
@@ -93,7 +94,7 @@
                           <br>
                         <h4 class="card-title text-center zoom">Send a Query !</h4>
                           <br>
-                        <form id="contactFrom" method="post" action="{% url 'contact' %}">
+                        <form id="contactFrom" method="post" action="{% url 'contact-us' %}">
                             {% csrf_token %}
                             {{ form.errors }}
                             <!--{{ form }}-->
