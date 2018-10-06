@@ -35,7 +35,6 @@ class ContactForm(forms.Form):
         attrs={
             'class': 'form-control',
             'placeholder': '',
-            'required': 'false',
         }
     ))
     body = forms.CharField(label='Question', widget=forms.Textarea(
