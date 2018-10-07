@@ -76,12 +76,7 @@
 }
 
 .zoom {
-    /*padding: 50px;
-    background-color: green;*/
     transition: transform .2s; /* Animation */
-    /*width: 200px;
-    height: 200px;
-    margin: 0 auto;*/
 }
 
 .zoom:hover {
@@ -100,11 +95,6 @@
 
 .active-page{
     color:#F99142;
-}
-
-#map {
-    height: 400px;
-    width: 100%;
 }
 
 
