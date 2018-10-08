@@ -47,6 +47,17 @@
 .homepage-main-img{
     width:inherit;
 }
+.home_page_background{
+    background-image: url('images/cloud-immigration.png');
+    background-color:lightgray;
+    background-position: center center;
+    /* Resize the background image to cover the entire container */
+    background-size: cover;
+    background-blend-mode: screen;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+}
+
 
 .sidebar{
     font-weight: 700;
