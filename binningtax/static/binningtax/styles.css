@@ -24,12 +24,17 @@
     font-family: Poppins;
 }
 
-.header {
+/*.header {
     padding: 0.25em;
     background-color: whitesmoke;
     color: #003366;
     font-size: 4em;
     font-weight: bold;
+    text-align: center;
+}*/
+.header {
+    background-color: whitesmoke;
+    color: #003366;
     text-align: center;
 }
 

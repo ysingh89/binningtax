@@ -32,11 +32,23 @@
 {% endblock header-image %}
 
 {% block content %}
+<style>
+    .home_page_background{
+        background-image: url({% static 'binningtax/images/cloud-immigration.png' %});
+        background-color:lightgray;
+        background-position: center center;
+        /* Resize the background image to cover the entire container */
+        background-size: cover;
+        background-blend-mode: screen;
+        /* Set background image to fixed (don't scroll along with the page) */
+        background-attachment: fixed;
+    }
+</style>
 
     <div class="home_page_background">
-
-       <div class="row" style="height:4em;"></div>
-       <div class="row row-eq-height" style="padding: 2em 0em 2em 0em;">
+        <div class="container-fluid">
+            <div class="row" style="height:4em;"></div>
+            <div class="row row-eq-height" style="padding: 2em 0em 2em 0em;">
            <div class="col-lg-1"></div>
            <div class="col-lg-6">
                <div id="homepage_carousal" class="carousel slide" data-ride="carousel">
@@ -79,7 +91,10 @@
            <div class="col-lg-1"></div>
 
         </div>
-        <div class="row" style="height:4em;"></div>
+            <div class="row" style="height:4em;"></div>
+        </div>
+
+
     </div>
 
 <script>
