@@ -113,6 +113,44 @@
     color:#F99142;
 }
 
+.contact-us-body-background{
+    background-image: url('images/abstract-art-background-370799 copy.jpg');
+    /*background-color:lightgray;*/
+    background-position: center center;
+    /* Resize the background image to cover the entire container */
+    background-size: cover;
+    background-blend-mode: screen;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+}
+
+.indian-body-background{
+    background-image: url('images/black.jpg');
+    /*background-color:lightgray;*/
+    background-position: center center;
+    /* Resize the background image to cover the entire container */
+    background-size: cover;
+    background-blend-mode: screen;
+    /* Set background image to fixed (don't scroll along with the page) */
+    background-attachment: fixed;
+
+}
 
 
+.contact-us-left-card{
+    width:inherit;
+    background-color: #143642 !important;
+    color: #DAD2D8 !important;
+}
 
+.contact-us-right-card{
+    width:inherit;
+    background-color: #06A77D !important;
+    color: #143642 !important;
+}
+
+.contact-us-form-button-style{
+    background-color: #EC9A29 !important;
+    color: #143642 !important;
+}
