@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.contrib import messages
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from .forms import ContactForm
@@ -48,6 +49,7 @@ def contact(request):
         except Exception as e:
             pass
         else:
+            # messages.success(request, 'Your query has been submitted seccessfully.')
             return render(request,
                           'binningtax/contact.html',
                           {'form': form,
@@ -55,5 +57,5 @@ def contact(request):
                            'contact': 'contact'
                            })
 
-        # print(form_contact['fname'])
+        # # print(form_contact['fname'])
     return render(request, 'binningtax/contact.html', {'form': form, 'contact': 'contact'})
