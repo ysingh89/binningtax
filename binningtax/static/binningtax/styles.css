@@ -154,3 +154,8 @@
     background-color: #EC9A29 !important;
     color: #143642 !important;
 }
+
+.message-success{
+    background-color:#06A77D;
+    color:#143642;
+}
