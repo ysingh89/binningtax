@@ -52,7 +52,7 @@
 
 
 {% block content %}
-    <div class="container-fluid">
+    <div class="container-fluid contact-us-body-background">
         {% if message %}
         <div class="row jumbotron">
             <div class="col text-center" style="background-color:gray;">
@@ -74,7 +74,7 @@
             <div class="col">
                 <div class="container">
                     <div class="card-deck">
-                        <div class="container card zoom" style="width:inherit;">
+                        <div class="contact-us-left-card container card zoom">
                       <!--<img class="card-img-top" src="{% static 'binningtax/images/dance-ind.jpg' %}" alt="Card image">-->
                       <div class="card-body">
                           <br>
@@ -106,7 +106,7 @@
 
                       </div>
                      </div>
-                        <div class=" container card zoom" style="width:inherit;">
+                        <div class="contact-us-right-card container card zoom">
                       <!--<img class="card-img-top" src="{% static 'binningtax/images/ancient.jpg' %}" alt="Card image">-->
                       <div class="card-body">
                           <br>
@@ -166,7 +166,7 @@
                                 <br><br>
                                 <div class="row">
                                     <div class="col">
-                                        <button type="submit" class="button btn btn-lg badge-info btn-block font-weight-bold">
+                                        <button type="submit" class="button btn btn-lg btn-block font-weight-bold contact-us-form-button-style">
                                             SUBMIT
                                         </button>
                                     </div>
