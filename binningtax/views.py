@@ -42,7 +42,7 @@ def contact(request):
             send_mail(
                 'Web Query',
                 message,
-                'query@binningconsultants.com',
+                'binningconsultants@gmail.com',
                 ['info@binningconsultants.com'],
                 fail_silently=False,
             )
