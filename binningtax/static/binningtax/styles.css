@@ -58,7 +58,9 @@
     background-attachment: fixed;
 }
 
-
+.text-color-white{
+    color: whitesmoke;
+}
 .sidebar{
     font-weight: 700;
 
